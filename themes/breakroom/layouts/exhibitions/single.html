@@ -11,7 +11,7 @@
 {{ $images := .Resources.ByType "image" }}
 <div class="row">
 {{ $hasImages := gt (len ($images)) 0 }}
-{{ if ge (len ($images)) 5}}
+{{ if ge (len ($images)) 1}}
     {{ partial "images-five-nano" . }}
 {{ end }}
 </div>
@@ -21,7 +21,14 @@
     {{ else }}
     {{ .Content }}
     {{ end }}
-
+    {{ $flyers := .Resources.Match "*.pdf" }}
+    {{ $hasFlyer := gt (len ($flyers)) 0 }}
+    {{ if $hasFlyer }}
+    {{ $flyer0 := (index $flyers 0) }}
+        <p><a href="{{- $flyer0 -}}" target="_blank">&#x1F4C4 Flyer</a>.</p>
+    {{  else }}
+        No Flyer
+    {{ end }}
 </div>
 </div>
 </div>
