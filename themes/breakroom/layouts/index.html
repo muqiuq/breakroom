@@ -1,0 +1,20 @@
+{{ define "main" }}
+<main aria-role="main">
+
+  <div class="container-sm">
+    <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
+    {{.Content}}
+  </div>
+  <div class="container-sm">
+    {{ range .Site.RegularPages.ByDate }}
+    <ul class="list-unstyled titlefont" style="padding: 2px;margin: 0px;text-decoration: underline;">
+      {{ if .Params.isExhibition }}
+      <li>
+        - <a href="{{.RelPermalink}}">{{.Title}} ({{ .Params.showdate }})</a>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+</main>
+{{ end }}

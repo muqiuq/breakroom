@@ -1,0 +1,28 @@
+{{ define "title" }}
+{{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+<div class="container">
+    <div class="container">
+<div class="row titlefont">
+<p>{{ .Title }} - {{ .Params.Artists }}
+</br>({{ .Params.Showdate}})</p>
+</div>
+{{ $images := .Resources.ByType "image" }}
+<div class="row">
+{{ $hasImages := gt (len ($images)) 0 }}
+{{ if ge (len ($images)) 5}}
+    {{ partial "images-five-nano" . }}
+{{ end }}
+</div>
+<div class="row" style="margin-top: 3vh;">
+    {{ if .Params.noContentYet }}
+    You wanted to see something... Not gonna happen...
+    {{ else }}
+    {{ .Content }}
+    {{ end }}
+
+</div>
+</div>
+</div>
+{{ end }}

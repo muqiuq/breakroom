@@ -1,0 +1,4 @@
+baseURL = "http://breakroom.ch/"
+languageCode = "en-us"
+title = "breakroom.ch"
+theme = "breakroom"

@@ -1,0 +1,19 @@
+$body-bg: #fefefe;
+$body-color: #111;
+
+$theme-colors: (
+        "primary": #000000,
+        "danger": #000000
+);
+
+$enable-rounded: false;
+$enable-shadows: true;
+$enable-gradients: true;
+
+.titlefont {
+  font-family: "Cinzel", "Times New Roman", serif;
+}
+
+$font-family-base: "Cormorant", "Times New Roman", serif !default;
+
+@import "bootstrap/scss/bootstrap";

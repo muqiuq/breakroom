@@ -1,0 +1,11 @@
+<div class="container" style="padding-left: 0px;">
+{{ $images := .Resources.ByType "image" }}
+{{ range $images }}
+{{ $imageB := .Resize "1200x q90" }}
+{{ $imageT := .Resize "150x q90" }}
+<a href = "{{- $imageB.RelPermalink -}}"><img src="{{- $imageT.RelPermalink -}}" style="padding-top: 5px; "></a>
+{{ end }}
+</div>
+
+
+

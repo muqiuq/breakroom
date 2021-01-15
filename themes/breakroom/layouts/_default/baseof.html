@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head" . }}
+<body class="">
+    <header class="container" style="padding-bottom: 5vh;padding-top: 5vh;">
+        <h1 class="titlefont"><a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Data.basic.title }}</a></h1>
+        {{ with .Params.subtitle }}
+        <span class="subtitle">{{.}}</span>
+        {{ end }}
+    </header>
+    <main class="">
+        {{- block "main" . }}
+        {{ end }}
+    </main>
+    <footer class="pl-scrollbar">
+        {{- partial "footer" . -}}
+    </footer>
+</body>
+</html>

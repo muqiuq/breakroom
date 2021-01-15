@@ -1,0 +1,32 @@
+{{ $images := .Resources.ByType "image" }}
+{{ $im0 := (index $images 0) }}
+{{ $im0 := $im0.Resize "500x" }}
+{{ $im1 := (index $images 1) }}
+{{ $im1 := $im1.Resize "500x" }}
+{{ $im2 := (index $images 2) }}
+{{ $im2 := $im2.Resize "500x" }}
+{{ $im3 := (index $images 3) }}
+{{ $im3 := $im3.Resize "500x" }}
+{{ $im4 := (index $images 4) }}
+{{ $im4 := $im4.Resize "500x" }}
+{{ $im5 := (index $images 5) }}
+{{ $im5 := $im5.Resize "500x" }}
+
+
+<div class="row" style="max-width: 700px;">
+    <div class="col-sm">
+        <img src="{{- $im0 -}}" style="max-width: 300px;" />
+    </div>
+    <div class="col-sm">
+        <div class="row">
+            <div class="col-sm">
+                <img src="{{- $im1 -}}" style="max-width: 150px;" />
+                <img src="{{- $im2 -}}" style="max-width: 150px;" />
+            </div>
+            <div class="col-sm">
+                <img src="{{- $im3 -}}" style="max-width: 150px;" />
+                <img src="{{- $im4 -}}" style="max-width: 150px;" />
+            </div>
+        </div>
+    </div>
+</div>
