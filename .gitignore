@@ -87,3 +87,8 @@ $RECYCLE.BIN/
 .DS_Store
 
 -v/
+/.idea/.gitignore
+/.idea/breakroom.ch.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
