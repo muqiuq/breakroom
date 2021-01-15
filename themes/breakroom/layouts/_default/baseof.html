@@ -2,11 +2,12 @@
 <html>
 {{- partial "head" . }}
 <body class="">
-    <header class="container" style="padding-bottom: 5vh;padding-top: 5vh;">
+    <header class="container" style="padding-bottom: 1vh;padding-top: 5vh;">
         <h1 class="titlefont"><a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Data.basic.title }}</a></h1>
         {{ with .Params.subtitle }}
         <span class="subtitle">{{.}}</span>
         {{ end }}
+        <p><a href="https://goo.gl/maps/W9nLWvGZbQGNVcC88">Ausstellungsraum der Flüelastrasse 30, Zürich</a></p>
     </header>
     <main class="">
         {{- block "main" . }}
