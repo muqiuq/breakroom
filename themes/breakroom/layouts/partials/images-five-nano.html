@@ -3,7 +3,7 @@
 {{ range $images }}
 {{ $imageB := .Resize "1200x q90" }}
 {{ $imageT := .Resize "150x q90" }}
-<a href = "{{- $imageB.RelPermalink -}}"><img src="{{- $imageT.RelPermalink -}}" style="padding-top: 5px; " data-opacityTarget="0.5"></a>
+<a href = "{{- $imageB.RelPermalink -}}"><img src="{{- $imageT.RelPermalink -}}" style="padding-top: 5px; " data-opacityTarget="1"></a>
 {{ end }}
 </div>
 
