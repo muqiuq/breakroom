@@ -5,5 +5,6 @@ draft: false
 showdate: 13.11.2020 - 20.11.2020
 artists: Hannah Grüninger, Tina Rettli, Corina Rauer und Sabrina Barbieri
 isExhibition: true
+showLink: true
 ---
 

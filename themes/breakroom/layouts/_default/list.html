@@ -13,7 +13,11 @@
 
         {{ range .Pages }}
         <li>
+            {{ if .Params.showLink }}
+            <span style="font-style: italic;">{{.Date.Format "2006-01-02"}} | {{.Title}}</span>
+            {{ else }}
             <a href="{{.RelPermalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+            {{ end }}
         </li>
         {{ end }}
     </ul>

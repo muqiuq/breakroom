@@ -5,6 +5,7 @@ draft: false
 showdate: 10.07.2020 - 20.07.2020
 artists: Maria Pomianski
 isExhibition: true
+showLink: true
 ---
 
 The Fall ist der Titel der Ausstellung der Künstlerin Maria Pomianski. 

@@ -30,8 +30,14 @@ $font-size-sm:                $font-size-base * .875 !default;
 
 $font-family-base: "Cormorant", "Times New Roman", serif !default;
 
-@import "bootstrap/scss/bootstrap";
+/* https://github.com/andreknieriem/simplelightbox */
+$sl-overlay-background: #000;
+$sl-overlay-opacity: 0.2;
+$sl-caption-background: #000;
+$sl-caption-color: #000;
 
+@import "bootstrap/scss/bootstrap";
+@import "simplelightbox/src/simple-lightbox.scss";
 
 
 

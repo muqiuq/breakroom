@@ -2,3 +2,12 @@ baseURL = "http://breakroom.ch/"
 languageCode = "en-us"
 title = "breakroom.ch"
 theme = "breakroom"
+
+[module]
+ [[module.mounts]]
+ source = "themes/breakroom/node_modules/simplelightbox/dist/simple-lightbox.js"
+ target = "assets/js/simple-lightbox.js"
+
+ [[module.mounts]]
+ source = "themes/breakroom/node_modules/simplelightbox/dist/simple-lightbox.css"
+ target = "assets/css/simple-lightbox.css"

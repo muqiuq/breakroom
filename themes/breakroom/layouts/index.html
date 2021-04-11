@@ -3,12 +3,17 @@
   <div class="container-sm">
     {{.Content}}
     {{ range .Site.RegularPages.ByDate }}
-    <ul class="list-unstyled titlefont" style="padding: 2px;margin: 0px;text-decoration: underline;">
+    <ul class="list-unstyled titlefont" style="padding: 2px;margin: 0px;">
       {{ if .Params.isExhibition }}
       <li>
-        <a href="{{.RelPermalink}}"><span class="breakspan">- {{.Title}}</span> <span class="breakspan">({{ .Params.showdate }})</span></a>
+        {{ if .Params.showLink }}
+        <a href="{{.RelPermalink}}" style="text-decoration: underline;"><span class="breakspan">- {{.Title}}</span> <span class="breakspan">({{ .Params.showdate }})</span></a>
+        {{ else }}
+        <span style="font-style: italic;"><span class="breakspan">- {{.Title}}</span> <span class="breakspan">({{ .Params.showdate }})</span></span>
+        {{ end }}
       </li>
       {{ end }}
+
     </ul>
     {{ end }}
   </div>
