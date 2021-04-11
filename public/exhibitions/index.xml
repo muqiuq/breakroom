@@ -34,5 +34,32 @@
       <description>The Fall ist der Titel der Ausstellung der Künstlerin Maria Pomianski.</description>
     </item>
     
+    <item>
+      <title>Kunst von Freunden</title>
+      <link>http://breakroom.ch/exhibitions/kunst-von-freunden-2/</link>
+      <pubDate>Sun, 10 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>http://breakroom.ch/exhibitions/kunst-von-freunden-2/</guid>
+      <description>Mehr Informationen auf kunstvonfreunden.ch</description>
+    </item>
+    
+    <item>
+      <title>How to...</title>
+      <link>http://breakroom.ch/exhibitions/how-to/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0100</pubDate>
+      
+      <guid>http://breakroom.ch/exhibitions/how-to/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kunst von Freunden</title>
+      <link>http://breakroom.ch/exhibitions/kunst-von-freunden-1/</link>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>http://breakroom.ch/exhibitions/kunst-von-freunden-1/</guid>
+      <description>Mehr Informationen auf kunstvonfreunden.ch</description>
+    </item>
+    
   </channel>
 </rss>
