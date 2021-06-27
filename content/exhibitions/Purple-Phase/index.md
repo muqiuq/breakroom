@@ -1,6 +1,7 @@
 ---
 title: "Purple Phase"
 date: 2020-07-20T00:00:00+01:00
+eventDate: 2020-07-20T00:00:00+01:00
 draft: false
 showdate: 23.07.2020 - 31.07.2020
 artists: Linda Hauser & Leandra Agazzi

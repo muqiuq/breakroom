@@ -2,10 +2,20 @@
 <main aria-role="main">
   <div class="container-sm">
     {{.Content}}
-    {{ range .Site.RegularPages.ByDate }}
+    {{ $lastNew := true }}
+    {{ $firstNew := true }}
+    {{ range .Site.RegularPages.ByDate.Reverse }}
     <ul class="list-unstyled titlefont" style="padding: 2px;margin: 0px;">
       {{ if .Params.isExhibition }}
       <li>
+        {{ if and ((time .Params.eventDate).After now) ($firstNew) }}
+        <i>Upcomming:</i><br>
+        {{ $firstNew = false }}
+        {{ end }}
+        {{ if and ((time .Params.eventDate).Before now) ($lastNew) }}
+        <br/><i>Vergangen:</i><br>
+        {{ $lastNew = false }}
+        {{ end }}
         {{ if .Params.showLink }}
         <a href="{{.RelPermalink}}" style="text-decoration: underline;"><span class="breakspan">- {{.Title}}</span> <span class="breakspan">({{ .Params.showdate }})</span></a>
         {{ else }}
