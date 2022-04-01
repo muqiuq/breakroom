@@ -15,9 +15,6 @@
 
 {{- $simpleLightBox := resources.Get "js/simple-lightbox.js" }}
 <script src="{{ $simpleLightBox.RelPermalink }}"></script>
-<!--
-{{- $simpleLightBoxCSS := resources.Get "css/simple-lightbox.css" }}
-<link rel="stylesheet" href="{{ $simpleLightBoxCSS.RelPermalink }}">-->
 
 {{- $baseCSS := resources.Get "css/base.css" }}
 <link rel="stylesheet" href="{{ $baseCSS.RelPermalink }}">
